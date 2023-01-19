@@ -19,4 +19,8 @@ describe('testing merge function in index.ts file', () => {
   test('both collections are empty', () => {
     expect(merge([], [])).toEqual([]);
   });
+
+  test('collections contain elements with the same value', () => {
+    expect(merge(col_2, col_2)).toEqual([2, 2, 4, 4, 6, 6, 8, 8]);
+  });
 });
