@@ -22,4 +22,6 @@ function merge(collection_1, collection_2) {
     return result;
 }
 exports.merge = merge;
-console.log(merge([1, 3, 5], [2, 4, 6]));
+const col_1 = [1, 3, 5];
+const col_2 = [2, 4, 6];
+console.log(`the result of merging ${col_1} with ${col_2} = ${merge(col_1, col_2)}`);
