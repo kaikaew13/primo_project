@@ -22,4 +22,4 @@ function merge(collection_1, collection_2) {
     return result;
 }
 exports.merge = merge;
-console.log(merge([], [1]));
+console.log(merge([1, 3, 5], [2, 4, 6]));

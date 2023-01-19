@@ -20,3 +20,5 @@ export function merge(collection_1: number[], collection_2: number[]) {
 
   return result;
 }
+
+console.log(merge([1, 3, 5], [2, 4, 6]));
