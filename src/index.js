@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.merge = void 0;
 function merge(collection_1, collection_2) {
     let i = 0;
     let j = 0;
@@ -15,8 +17,9 @@ function merge(collection_1, collection_2) {
         result.push(collection_1[i++]);
     }
     while (j < collection_2.length) {
-        result.push(collection_2[j]);
+        result.push(collection_2[j++]);
     }
     return result;
 }
-console.log(merge([1, 4, 7, 9], [2, 5, 6, 8]));
+exports.merge = merge;
+console.log(merge([], [1]));
